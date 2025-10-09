@@ -1,0 +1,111 @@
+/*
+What is Media Queries:
+
+/Sntax:
+@media (min screen size) and (max size){
+    CSS Code
+}
+
+desktop: 1024px and above
+tablet: 768px to 1023px
+mobile: 767px and below
+
+
+*/
+
+.container{
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        background-color: blue;
+        font-size: 25px;
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        background-color: green;
+        font-size: 20px;
+        color: white;
+    }
+}   
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 9, 9);
+    padding: 10px 20px;
+    color: white;
+}
+.list-items{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+@media (max-width: 600px) {
+    .list-items{
+        /* display: none; */
+        flex-direction: column;
+    }
+    .navbar{
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+}
+
+
+.products-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    background-color: lightseagreen;
+    
+}
+.card2{
+background-color: lightcoral;
+/* flex: 3; */
+flex-shrink: 2;
+flex-basis: 400px;
+}
+.card3{
+background-color: lightblue;
+/* flex: 3; */
+flex-shrink: 1;
+/* flex-basis: 200px; */
+width: 300px;
+}
+
+/*
+Why JS:
+1. To make the website interactive
+2. To manipulate the DOM
+3. To handle events
+4. To validate forms
+5. To create animations
+6. To fetch data from APIs
+
+History of JS:
+1. Created by Brendan Eich in 1995
+2. Initially called Mocha, then LiveScript, and finally JavaScript
+3. Standardized as ECMAScript in 1997
+
+
+versions of JS:
+1. ES1 - 1997---basic syntax, core features
+2. ES2 - 1998---minor updates
+3. ES3 - 1999---regular expressions, better string handling
+4. es5 - 2009---major update, introduced classes, modules, promises
+5. ES6 (ES2015) - 2015---let and const, arrow functions, template literals, destructuring, default parameters, rest and spread operators, classes, modules, promises
+
+
+*/
