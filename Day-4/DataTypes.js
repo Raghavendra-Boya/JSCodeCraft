@@ -105,7 +105,8 @@ console.log(person.age);
 
 let numbers = [1, 2, 3, 4, 5,true,"string",{name:"nagarjuna",age:24},[100,200,300]]; // Array
 console.log(numbers);
-console.log(typeof numbers); // Note: typeof array returns "object"
+console.log(typeof numbers); 
+// Note: typeof array returns "object"
 // we can access single value from array using index, the index starts from 0 and lenght start from 1
 console.log(numbers[7].name);
 console.log(numbers[8]);
