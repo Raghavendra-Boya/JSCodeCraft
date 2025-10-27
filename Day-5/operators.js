@@ -144,11 +144,52 @@ console.log(a1++);//22--->23
 console.log(--a1);//22
 
 
+console.log("5"-"2"+"3");//523//33-->
 
 
+//Type COnversion
+
+//type conversion means changing one data type to onother data type(number-->string, string to number, number to boolean, boolean to string)
+
+//two types of conversion
+
+//1. implicit type conversion(type coercion)
 
 
+console.log("5"-"2");//string - string // 5 - 2 // 3
+console.log(5+"2");//52
+//number + number --->add
+//number + String --->concatinate --->String
 
+let productPrice = parseInt(prompt("enter product Price:"))//200
+console.log(productPrice);
+console.log(typeof productPrice);
+let quantity = parseInt(prompt("enter quantity"))//3
+let totalAmount = productPrice + quantity;//200+3-->2003
+console.log(totalAmount);
+
+
+console.log("5"+"2"-"3");// //52-"3"//52-3//49
+console.log("10"-"5"+2+"1");//521//71
+//5+2-->7+"1"-->"7"+"1"-->"71"
+
+console.log("10"-true+false+"2");//92
+//10-1//9+false+"2"//9+0+"2"//9+"2"//"9"+"2"//92
+
+//1.check operator
+//2. data type
+//3. perfomance
+
+console.log("Hello"-true+false+"2");
+//"hello"-true--->Hello-1--->NaN
+//Nan+false-->NaN+0--->NaN+"2"--->NaN2
+
+let a2 = 2+3*4/2-1;//2+3*2-1//2+6-1//8-1//7
+//Operator precedence((),**,/,*,+,-)
+console.log(a2);
+
+let c3 = (2+3)*4 /2**2;//40 //5 // (2+3)*4/4--->(2+3)*1--->5*1--->5
+console.log(c3);
 
 
 

@@ -1,0 +1,73 @@
+var x = 10;
+function test() {
+  console.log(x);
+  <!-- var x = 20; -->
+}
+test();
+
+
+let a = 5;
+{
+  let a = 10;
+  {
+    console.log(a);
+  }
+}
+
+
+console.log(1 + "2" + "2");//122
+console.log(1 + +"2" + "2");//32
+console.log(1 + -"1" + "2");//02
+console.log(+"1" + "1" + "2");//112
+console.log("A" - "B" + "2");//
+console.log("A" - "B" + 2);
+
+
+let a = true + false + true + 10;
+console.log(a);
+
+
+console.log(0 == "");      // ?
+console.log(0 == "0");     // ?
+console.log(false == "false"); // ?
+console.log(false == "0"); // ?
+
+let x = 3;
+let y = x++ + ++x + x--;
+console.log(y);
+
+
+function test() {
+  let y = 5;
+  if (true) {
+    let y = 15;
+    console.log("Inside block:", y);
+  }
+  console.log("Outside block:", y);
+}
+test(); // ?
+
+function checkScope() {
+  var msg = "Hello";
+  function inner() {
+    msg = "Hi";
+    var msg;
+    console.log(msg);
+  }
+  inner();
+}
+checkScope(); // ?
+
+var num = 10;
+function test() {
+  console.log(num);//
+  var num = 20;
+  console.log(num);
+}
+test(); // ?
+
+
+ console.log(typeof null);
+  console.log(typeof []);
+  console.log(typeof {});
+
