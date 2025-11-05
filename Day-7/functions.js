@@ -9,6 +9,25 @@
 
     //function call
     functionName();
+
+    types of functions:
+    1. function declaration:
+    Use Case:
+    1. Showinfg welcome message
+    2. performing a task multiple times
+    3. navigations
+    2. function with parameter:
+    Use Case:
+    1. performing a task with different data
+    2. calculations
+    3. product prices
+    3. function with return type:
+
+
+
+
+    
+
  */
 
     document.write(`Step-1: add oil<br>`);
@@ -58,9 +77,9 @@
     }
     console.log(multiply(5, 6));
     //5 anonymous function  
-    setTimeout(function(){
-        console.log("hello after 3 seconds");
-    }, 3000);
+    // setTimeout(function(){
+    //     console.log("hello after 3 seconds");
+    // }, 3000);
 
 
     let variable = function add(a,b){
@@ -68,7 +87,7 @@
     }
 
     variable(10,20);
-    add(30,40); //error: add is not defined
+    // add(30,40); //error: add is not defined
 
     console.log("Hello World");
 
@@ -77,3 +96,26 @@
     }
     outer(10,"john", [1,2,3]);
     outer("john", [1,2,3],10);
+
+
+    function greet(userName="Guest"){
+        console.log("Hello " + userName + ", welcome to the site!");
+    }
+    
+    greet("Bob");
+    greet();
+
+    function userName(){
+        let userName = document.getElementById("username").value;
+    console.log(userName);
+    }
+
+    function calculateBill (amount,tax=0.05){
+        let total = amount + (amount * tax);
+        return total;
+    }
+    console.log(calculateBill(100));
+    console.log(calculateBill(200,0.1));
+
+
+    
