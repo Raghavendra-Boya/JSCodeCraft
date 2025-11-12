@@ -56,7 +56,7 @@ console.log(date.toLocaleTimeString());
 
 function rate(value){
     for(let i=1; i<=5; i++){
-        document.getElementById("s"+i).style.color = "gray";
+        document.getElementById("s"+i).style.color = "green";
     }
     for(let i=1; i<=value; i++){
         document.getElementById("s"+i).style.color = "gold";
@@ -64,6 +64,7 @@ function rate(value){
 
 document.getElementById("result").innerText = value+"/5";
 alert("You rated "+value+" out of 5 stars");
+console.log("Hello World");
 }
 
 //setInterval(function, milliseconds)

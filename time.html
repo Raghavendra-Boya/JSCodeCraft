@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="time"></div>
+
+
+    <script>
+        let endDate = new Date();
+           console.log(endDate);
+           endDate.setDate(endDate.getDate() + 3);
+           console.log(endDate);
+        function updateTime(){
+           let now = new Date().getTime();
+           let distance = endDate.getTime() - now;
+           console.log(distance);
+
+
+           let day = Math.floor(distance / (1000 * 60 * 60 * 24));
+           console.log((distance % (1000 * 60 * 60 * 24)) );
+           let hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+           console.log(hour);
+              let min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              console.log(min);
+                    let sec = Math.floor((distance % (1000 * 60)) / 1000);
+                    console.log(sec);
+
+           console.log(day);
+
+        }
+        let timer = setInterval(updateTime, 1000);
+        clearInterval(timer);
+        //    console.log(object);
+        //86800000
+        //convert this MS into hr, min, sec
+
+       
+
+
+
+              
+
+
+        
+        updateTime();
+
+
+    </script>
+</body>
+</html>
