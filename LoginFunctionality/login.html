@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 flex items-center min-h-screen justify-center">
+    <form action="./dashBoard.html" id="loginForm">
+        <div class="bg-white shadow rounded max-w-md">
+        <h2 class="text-2xl font-semibold text-center mb-4 ">LogIn Page</h2>
+        <div class="space-y-4">
+            <div>
+                <label for="loginUserName" class="text-sm text-gray-500">Uer Name:</label>
+                <input type="text" id="loginUserName" class="border rounded " >
+            </div>
+             <div>
+                <label for="loginPassword" class="text-sm text-gray-500">Uer Name:</label>
+                <input type="password" id="loginPassword" class="border rounded " >
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 text-white px-2 rounded hover:bg-blue-900 " onclick="loginUser()">Login</button>
+            </div>
+
+            <p>Don't have an Account? <a href="./register.html" class="text-indigo-600">Go to Register</a></p>
+        </div>
+    </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

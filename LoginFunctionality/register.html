@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 flex items-center min-h-screen justify-center">
+    <div class="bg-white shadow rounded max-w-md">
+        <h2 class="text-2xl font-semibold text-center mb-4 ">register Page</h2>
+        <div class="space-y-4">
+            <div>
+                <label for="registerUserName" class="text-sm text-gray-500">Uer Name:</label>
+                <input type="text" id="registerUserName" class="border rounded " >
+            </div>
+             <div>
+                <label for="registerPassword" class="text-sm text-gray-500">Uer Name:</label>
+                <input type="password" id="registerPassword" class="border rounded " >
+            </div>
+
+            <div>
+                <label for="registerEmail" class="text-sm text-gray-500">Uer Name:</label>
+                <input type="email" id="registerPassword" class="border rounded " >
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 text-white px-2 rounded hover:bg-blue-900 " onclick="registerUser()">register</button>
+            </div>
+
+            <p>If You have an Account? <a href="./login.html" class="text-indigo-600">Go to Login</a></p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
