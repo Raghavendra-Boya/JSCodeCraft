@@ -81,3 +81,84 @@ btn.addEventListener("click",function(){
 btn.addEventListener("click",function(){
     console.log("Button Double Clicked from JS")
 })
+
+document.getElementById("dblCLick").addEventListener("dblclick", function(){
+    console.log("Button Double Clicked")
+})
+
+btn.addEventListener("mouseover", function(){
+    btn.style.backgroundColor = "yellow"
+})
+
+btn.addEventListener("mouseout", function(){
+    btn.style.backgroundColor = ""
+})
+
+btn.addEventListener("mousemove", function(){
+    console.log("Mouse is moving over the button")
+})
+
+document.getElementById("input").addEventListener("focus", function(){
+    document.getElementById("input").style.backgroundColor = "lightblue"
+})
+document.getElementById("input").addEventListener("blur", function(){
+    document.getElementById("input").style.backgroundColor = ""
+})
+
+document.getElementById("input").addEventListener("change", function(){
+    console.log("Input value changed to: " + document.getElementById("input").value)
+})
+
+let value = document.getElementById("input").value
+console.log(value);
+
+//submit event
+document.getElementById("myForm").addEventListener("submit", function(event){
+    // event.preventDefault(); // Prevent form submission
+    console.log("Form submitted")
+})
+
+
+//keybpard Events
+// document.getElementById("input").addEventListener("keydown", function(event){
+//     console.log("Key down: " + event.key)
+// })
+// document.getElementById("input").addEventListener("keyup", function(event){
+//     console.log("Key up: " + event.key)
+// })
+document.getElementById("input").addEventListener("keypress", function(event){
+    console.log("Key press: " + event.key)
+})
+
+
+//window events
+window.addEventListener("load", function(){
+    console.log("Window loaded")
+})
+window.addEventListener("resize", function(){
+    console.log("Window resized to: " + window.innerWidth + "x" + window.innerHeight)
+})
+window.addEventListener("scroll", function(){
+    console.log("Window scrolled to: " + window.scrollY)
+}
+)
+// window.addEventListener("unload", function(){
+//     console.log("Window unloaded")
+// })
+
+//clipboard events
+document.getElementById("input").addEventListener("copy", function(){
+    console.log("Content copied from input")
+})
+document.getElementById("input").addEventListener("cut", function(){
+    console.log("Content cut from input")
+})
+document.getElementById("input").addEventListener("paste", function(){
+    console.log("Content pasted into input")
+})
+
+//not allow user to copy,paste,cut from input
+document.getElementById("noClipboard").addEventListener("copy", function(event){
+   
+    console.log("Copying is disabled")
+})
