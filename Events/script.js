@@ -162,3 +162,98 @@ document.getElementById("noClipboard").addEventListener("copy", function(event){
    
     console.log("Copying is disabled")
 })
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+1. Mouse Events:
+      1. click: single click
+
+      Real world Use cases:
+            1. Submitting forms
+            2. Navigating links
+            3. Opening dropdown menus
+            4. Playing/pausing media
+
+    2. dblclick: double click
+        Real world Use cases:
+            1. Opening files or folders
+            2. Zooming in on images or maps
+            3. Selecting text or items quickly
+
+2. keyboard Events:
+        1. keydown: when a key is pressed down
+        Real world Use cases:
+            1. Game controls
+            2. Form validation
+            3. Keyboard shortcuts
+
+
+
+
+*/
+
+document.getElementById("img").addEventListener("dblclick", function(){
+    img.style.transform = "scale(1.5)";
+})
+
+document.getElementById("img").addEventListener("mouseout", function(){
+    img.style.transform = "scale(1)";
+})
+
+document.getElementById("file").addEventListener("dblclick", function(){
+    openFile();
+})
+
+function openFile(){
+    alert("File Opened")
+}
+
+
+document.getElementById("text").addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        alert("Form Submitted")
+    }
+})
+
+document.getElementById("text").addEventListener("keydown", function(event){
+    if(!isNaN(event.key)){
+        alert("Numbers are not allowed")
+
+    }
+})
+
+let count = document.getElementById("count");
+let msg = document.getElementById("address");
+
+msg.addEventListener("keyup", function(e){
+
+count.innerText = msg.value.length + " / 100";
+})
+
+// let myForm = ;
+
+
+// userName.addEventListener("keydown", function(){
+
+// btn1.disabled = true
+// })
+
+document.getElementById("myForm").addEventListener("submit", function(e){
+
+    e.preventDefault();//
+let userName = document.getElementById("user").value;
+let password = document.getElementById("password").value;
+let msg2 = document.getElementById("msg2");
+
+
+if(userName === "" || password === ""){
+    msg2.innerText = "All fields are required";
+    msg2.style.color = "red";
+}else{
+    msg2.innerText = "Form submitted successfully";
+    msg2.style.color = "green";
+}
+    
+})

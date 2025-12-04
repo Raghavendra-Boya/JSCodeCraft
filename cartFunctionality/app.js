@@ -88,19 +88,31 @@ function logout() {
     const bodyEl = document.getElementById("pageBody");
     const toggleBtn = document.getElementById("themeToggle");
 
-    toggleBtn.onclick = function () {
-        bodyEl.classList.toggle("bg-white");  // Light
-        bodyEl.classList.toggle("bg-black"); // Yellow / Secondary
+    function toggle() {
+    //     bodyEl.classList.toggle("bg-white");  // Light
+    //     bodyEl.classList.toggle("bg-black"); // Yellow / Secondary
 
-        // Get all elements that are black
-    const blackTextElements = document.querySelectorAll(".text-black, .text-white");
+    //     // Get all elements that are black
+    // const blackTextElements = document.querySelectorAll(".text-black, .text-white");
 
-    // Loop through each element
-    for (let i = 0; i < blackTextElements.length; i++) {
-        let el = blackTextElements[i];
+    // // Loop through each element
+    // for (let i = 0; i < blackTextElements.length; i++) {
+    //     let el = blackTextElements[i];
 
-        // Toggle text color
-        el.classList.toggle("text-black");
-        el.classList.toggle("text-white");
-    };
+    //     // Toggle text color
+    //     el.classList.toggle("text-black");
+    //     el.classList.toggle("text-white");
+    // };
+
+    alert("Toggle Clicked");
     }
+
+    /**
+     * 
+     for(initialization;; increment){
+        // code to be executed
+    }
+     */
+
+
+    
